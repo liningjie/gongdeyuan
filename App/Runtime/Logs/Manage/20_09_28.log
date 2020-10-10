@@ -1,0 +1,6 @@
+[ 2020-09-28T10:12:35+08:00 ] 114.225.184.8 /junyi.php?s=/Public/editorMethod&action=uploadimage
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /www/wwwroot/gongdeyuan.com.cn/Include/Library/Think/Upload.class.php 第 170 行.
+
+[ 2020-09-28T10:22:46+08:00 ] 114.225.184.8 /junyi.php?s=/Public/editorMethod&action=uploadimage
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /www/wwwroot/gongdeyuan.com.cn/Include/Library/Think/Upload.class.php 第 170 行.
+

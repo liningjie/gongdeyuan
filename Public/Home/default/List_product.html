@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title> {$title}-<yang:sitename /></title>
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <!--favicon-->
+     <link rel="icon" href="__PUBLIC__/assets/images/gongdeyuan.png">
+    <!-- Lib & Custom Stylesheet Included -->
+    <link rel="stylesheet" href="__PUBLIC__/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/assets/css/fontello.css">
+    <link rel="stylesheet" href="__PUBLIC__/assets/css/owl-carousel.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/assets/css/magnific.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/assets/css/animate.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/assets/source/jquery.fancybox.css" media="screen" />
+    <link rel="stylesheet" href="__PUBLIC__/assets/css/style.css">
+    <link rel="stylesheet" href="__PUBLIC__/assets/css/responsive.css">
+
+	<!-- Add jQuery library -->
+	<script src="__PUBLIC__/assets/js/jquery.min.js"></script>
+	<script src="__PUBLIC__/assets/source/jquery.fancybox.pack.js"></script>
+</head>
+<body>
+		<include file="Public:head" />
+
+	<!--Start Breadcrumb Section -->
+	<section class="breadcrumb_area text-center section_padding prkv productbanner" >
+         <yang:navlist typeid='13'>
+        <h1>{$navlist.name}</h1>
+        </yang:navlist>
+        <img class="header_slide_shape" src="__PUBLIC__/assets/images/header_slider_shape.png" alt="shape">
+	</section><!--end .breadcrumb_area-->
+	<!--End Breadcrumb Section -->
+	<!--Start gallery Section -->
+	<section class="slider_service_area section_padding text-center" style="padding-top: 60px;">
+        <div class="container">
+            <div class="row">
+                <yang:list typeid='$cid' hideflag='0' pagesize='6' pagetheme='%HEADER% %FIRST% %LINK_PAGE% %END%' >
+                <div class="col-md-4 col-sm-6">
+                    <div class="slider_service_box mb_60">
+                        <div class="slider_service_img">
+                            <a href="{$list.url}">
+                            <img src="{$list.litpic}" alt="shape">
+                            </a>
+                        </div>
+                        <div class="slider_service_details">
+                            <a href=" {$list.url}"><h2>{$list.title}</h2></a>
+                            
+                            <a class="btn-readmore" href="{$list.url}">查看更多</a>
+                        </div><!--end .slider_service_details-->
+ <!--end .slider_service_details-->
+                    </div><!--end .slider_service_box-->
+                </div><!--end .col-md-4-->
+                  </yang:list>
+            </div><!--end .row-->
+             <div id="page">{$page}</div>
+        </div><!--end .container-->
+    </section><!--end .slider_service_area-->
+	<!--End gallery Section -->
+
+	<!-- Ajax Included -->
+	<script src="__PUBLIC__/assets/js/bootstrap.min.js"></script>
+    <script src="__PUBLIC__/assets/js/waypoint.js"></script>
+    <script src="__PUBLIC__/assets/js/jquery.counter.min.js"></script>
+	<script src="__PUBLIC__/assets/js/owl.carousel.min.js"></script>
+	<script src="__PUBLIC__/assets/js/magnific.min.js"></script>
+    <script src="__PUBLIC__/assets/js/custom.js"></script>
+    <include file="Public:foot" />
+</body>
+</html>

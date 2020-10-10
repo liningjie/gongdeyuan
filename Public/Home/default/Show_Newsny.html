@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{$title}-<yang:sitename /></title>
+    <!--google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900"
+      rel="stylesheet"
+    />
+    <!--favicon-->
+    <link rel="icon" href="__PUBLIC__/assets/images/gongdeyuan.png" />
+    <!-- Lib & Custom Stylesheet Included -->
+    <link rel="stylesheet" href="__PUBLIC__/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="__PUBLIC__/assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="__PUBLIC__/assets/css/fontello.css" />
+    <link rel="stylesheet" href="__PUBLIC__/assets/css/owl-carousel.min.css" />
+    <link rel="stylesheet" href="__PUBLIC__/assets/css/magnific.min.css" />
+    <link rel="stylesheet" href="__PUBLIC__/assets/css/animate.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="__PUBLIC__/assets/source/jquery.fancybox.css"
+      media="screen"
+    />
+    <link rel="stylesheet" href="__PUBLIC__/assets/css/style.css" />
+    <link rel="stylesheet" href="__PUBLIC__/assets/css/responsive.css" />
+  </head>
+  <body>
+    <include file="Public:head" />
+
+    <!--Start Breadcrumb Section -->
+    <section class="breadcrumb_area text-center section_padding newkv">
+      <yang:navlist typeid="4">
+        <h1>{$navlist.name}</h1>
+      </yang:navlist>
+      <img
+        class="header_slide_shape"
+        src="__PUBLIC__/assets/images/header_slider_shape.png"
+        alt="shape"
+      />
+    </section>
+    <!--end .breadcrumb_area-->
+    <!--End Breadcrumb Section -->
+
+    <!--Start Blog details Section -->
+    <section class="blog_details_area section_padding newstop">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="blog_details_left">
+              <div class="blog_left_box">
+                <div class="blog_share_details">
+                  <h1 style="text-align: center">{$content.title}</h1>
+                  <p style="text-align: center; margin: 10px 0">
+                    <span
+                      >发布时间：{$content.publish_time}
+                      点击次数：{$content.click}次</span
+                    >
+                  </p>
+                  <div>{$content.content}</div>
+                </div>
+                <!--end blog-share-details-->
+                上一篇：<yang:prev titlelen="" notitle="" target="" /><br />
+                下一篇：<yang:next titlelen="" notitle="" target="" />
+              </div>
+              <!--end blog-left-box-->
+            </div>
+            <!--end blog-details-left-->
+          </div>
+          <!--end col-md-8-->
+        </div>
+        <!--end .row-->
+      </div>
+      <!--end .container-->
+    </section>
+    <!--end .blog_details_area-->
+    <!--End Blog details Section -->
+
+    <!-- Ajax Included -->
+    <script src="__PUBLIC__/assets/js/jquery.min.js"></script>
+    <script src="__PUBLIC__/assets/source/jquery.fancybox.pack.js"></script>
+    <script src="__PUBLIC__/assets/js/bootstrap.min.js"></script>
+    <script src="__PUBLIC__/assets/js/waypoint.js"></script>
+    <script src="__PUBLIC__/assets/js/jquery.counter.min.js"></script>
+    <script src="__PUBLIC__/assets/js/owl.carousel.min.js"></script>
+    <script src="__PUBLIC__/assets/js/waypoint.js"></script>
+    <script src="__PUBLIC__/assets/js/jquery.counter.min.js"></script>
+    <script src="__PUBLIC__/assets/js/magnific.min.js"></script>
+    <script src="__PUBLIC__/assets/js/custom.js"></script>
+    <include file="Public:foot" />
+  </body>
+</html>

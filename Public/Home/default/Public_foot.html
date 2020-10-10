@@ -1,0 +1,82 @@
+<!--start footer section -->
+<footer class="footer_section section_padding">
+  <img
+    src="__PUBLIC__/assets/images/shape/test_footer_shape.png"
+    alt="Footer shape"
+    class="footer_shape"
+  />
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-sm-6">
+        <div class="footer_box">
+          <p>
+            经国家权威部分检测，此水源属偏硅酸型天然矿泉水无色、无味、透明、口感柔和、圆润，后味清冽、甘甜，蕴含丰富人体所需的微量元素，pH值为7.32-8.0，天然弱碱性水。功德源整个生产线均引进先进的生产设备，全自动生产，无菌灌装生产，保持天然泉水的原有品质。
+          </p>
+        </div>
+        <!--end .footer_box-->
+      </div>
+      <!--end .col-md-4-->
+      <div class="col-md-3 col-sm-3">
+        <div class="footer_box">
+          <h3>快捷入口</h3>
+          <ul>
+            <yang:navlist typeid="0" hideflag="0">
+              <li>
+                <a href="{$navlist.url}">{$navlist.name}</a>
+              </li>
+            </yang:navlist>
+          </ul>
+        </div>
+        <!--end .footer_box-->
+      </div>
+      <!--end .col-md-4-->
+
+      <div class="col-md-3 col-sm-3">
+        <div class="footer_box">
+          <h3>联系我们</h3>
+          <p><yang:address /></p>
+          <span class="support_email"
+            ><i class="fa fa-envelope"></i>
+            <a href="mailto:layerdrops@gmail.com">联系人：王先生</a></span
+          >
+          <span class="support_num"
+            ><i class="fa fa-phone-square"></i>
+            <a href="">招商热线：<yang:phone /></a
+          ></span>
+        </div>
+        <!--end .footer_box-->
+      </div>
+      <!--end .col-md-4-->
+    </div>
+    <!--end .row-->
+  </div>
+  <!--end .container-->
+
+  <!-- copyright section -->
+  <div class="copyright_area">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12">
+          <p>
+            &copy; <yang:sitename /> © 2020 版权所有
+            <a href="https://beian.miit.gov.cn/"><yang:beian /></a>
+            技术支持-君亿视觉
+          </p>
+        </div>
+
+        <span style="text-align: center">
+          友情链接：<yang:flink typeid="" orderby="" limit="" pagesize="">
+            <a href="{$flink.url}">{$flink.name}</a>&nbsp
+          </yang:flink>
+        </span>
+      </div>
+      <!--end .row-->
+    </div>
+    <!--end .container-->
+  </div>
+  <!--end .copyright_area-->
+</footer>
+<!--end .footer_section-->
+<!--end footer section -->
+
+<!-- Ajax Included -->

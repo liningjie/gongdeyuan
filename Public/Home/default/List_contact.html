@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{$title}-<yang:sitename /></title>
+    <!--google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900"
+      rel="stylesheet"
+    />
+    <!--favicon-->
+    <link rel="icon" href="__PUBLIC__/assets/images/gongdeyuan.png" />
+    <!-- Lib & Custom Stylesheet Included -->
+    <link rel="stylesheet" href="__PUBLIC__/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="__PUBLIC__/assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="__PUBLIC__/assets/css/fontello.css" />
+    <link rel="stylesheet" href="__PUBLIC__/assets/css/animate.css" />
+    <link
+      rel="stylesheet"
+      href="__PUBLIC__/assets/source/jquery.fancybox.css"
+      media="screen"
+    />
+    <link rel="stylesheet" href="__PUBLIC__/assets/css/style.css" />
+    <link rel="stylesheet" href="__PUBLIC__/assets/css/responsive.css" />
+  </head>
+  <body>
+    <include file="Public:head" />
+
+    <!--start map section-->
+    <section class="breadcrumb_area text-center section_padding conkv">
+      <yang:navlist typeid="10">
+        <h1>{$navlist.name}</h1>
+      </yang:navlist>
+      <img
+        class="header_slide_shape"
+        src="__PUBLIC__/assets/images/header_slider_shape.png"
+        alt="shape"
+      />
+    </section>
+    <!--end .breadcrumb_area-->
+    <!--end map section-->
+    <section
+      class="service_style_2_area section_padding text-center"
+      style="padding-top: 60px"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-6">
+            <div class="service_style_2_details">
+              <i class="icon-businessman"></i>
+              <h2>联系人</h2>
+              <p>王先生</p>
+            </div>
+            <!--end .service_style_2_details-->
+          </div>
+          <!--end .col-md-4-->
+          <div class="col-md-4 col-sm-6">
+            <div class="service_style_2_details">
+              <i class="icon-route"></i>
+              <h2>地址</h2>
+              <p>
+                <yang:address />
+              </p>
+            </div>
+            <!--end .service_style_2_details-->
+          </div>
+          <!--end .col-md-4-->
+          <div class="col-md-4 col-sm-6">
+            <div class="service_style_2_details paragraph_size">
+              <i class="icon-visitor-identification"></i>
+              <h2>招商热线</h2>
+              <p><yang:phone /></p>
+            </div>
+            <!--end .service_style_2_details-->
+          </div>
+          <!--end .col-md-4-->
+        </div>
+        <!--end .row-->
+      </div>
+      <!--end .container-->
+    </section>
+    <!--end .service_style_2_area-->
+    <!--start contact section -->
+    <section class="contact_form_area contact_form_other_style text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="contact-details">
+              <div class="hero-section-title">
+                <h1>在线留言</h1>
+              </div>
+              <form
+                action="<yang:gbookaddurl />"
+                method="post"
+                onsubmit="return tijiao()"
+                name="form1"
+                id="form1"
+              >
+                <input
+                  type="text"
+                  name="username"
+                  id="Contact"
+                  class="input_mr input_half_width gray_bg"
+                  placeholder="您的姓名"
+                />
+                <input type="hidden" name="FaqTitle" value="在线留言" />
+                <input
+                  type="EMAIL"
+                  name="email"
+                  id="ContactWay"
+                  class="input_half_width gray_bg"
+                  placeholder="联系方式"
+                />
+                <textarea
+                  class="gray_bg"
+                  name="content"
+                  id="Content"
+                  cols="30"
+                  rows="10"
+                  placeholder="留言内容"
+                ></textarea>
+                <button
+                  class="btn-orange"
+                  type="reset"
+                  value="Request a Quote Now"
+                >
+                  重置
+                </button>
+                <button
+                  class="btn-orange"
+                  type="submit"
+                  id="button"
+                  value="Request a Quote Now"
+                >
+                  提交
+                </button>
+              </form>
+            </div>
+            <!--end .contact-details-->
+          </div>
+          <!--end .col-md-8-->
+        </div>
+        <!--end .row-->
+      </div>
+      <!--end .container-->
+    </section>
+    <!--end .contact_form_area-->
+    <!--end contact section -->
+
+    <!-- Ajax Included -->
+    <script src="__PUBLIC__/assets/js/jquery.min.js"></script>
+    <script src="__PUBLIC__/assets/source/jquery.fancybox.pack.js"></script>
+    <script src="__PUBLIC__/assets/js/bootstrap.min.js"></script>
+    <script src="__PUBLIC__/assets/js/owl.carousel.min.js"></script>
+    <script src="__PUBLIC__/assets/js/magnific.min.js"></script>
+    <script src="__PUBLIC__/assets/js/waypoint.js"></script>
+    <script src="__PUBLIC__/assets/js/jquery.counter.min.js"></script>
+    <!-- <script src="__PUBLIC__/assets/js/custom_googlemap.js"></script> -->
+    <script src="http://ditu.google.cn//maps/api/js?key=AIzaSyA_Agsvf36du-7l_mp8iu1a-rXoKcWfs2I"></script>
+    <script src="__PUBLIC__/assets/js/custom.js"></script>
+    <include file="Public:foot" />
+  </body>
+</html>
